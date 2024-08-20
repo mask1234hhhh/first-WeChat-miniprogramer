@@ -1,0 +1,28 @@
+.container{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+}
+text{
+  font-size:80rpx;
+  color:#3C5F81;
+}
+image{
+  width:220rpx;
+}
+.detail{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+}
+.bar{
+  display:flex;
+  flex-direction:row;
+  margin:20rpx 0;
+}
+.box{
+  width:33.3%;
+  text-align:center;
+}

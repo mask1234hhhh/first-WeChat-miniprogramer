@@ -1,0 +1,33 @@
+<view class='container'>
+  <!--区域1：地区选择器-->
+  <picker mode='region'bindchange='regionChange'>
+    <view>{{region}}</view>
+    </picker>
+     <!--区域2：单行天气-->
+    <text>{{now.temp}}°C{{now.text}}</text>
+     <!--区域3：天气图标-->
+     <image src='/images/weather_icon/{{now.icon}}.png'mode='widthFix'></image>
+     <!--区域4：多行天气-->
+     <view class='detail'>
+      <view class='bar'>
+        <view class='box'>湿度</view>
+        <view class='box'>气压</view>
+        <view class='box'>能见度</view>
+      </view>
+      <view class='bar'>
+        <view class='box'>{{now.humidity}} %</view>
+        <view class='box'>{{now.pressure}} hpa</view>
+        <view class='box'>{{now.vis}} km</view>
+      </view>
+      <view class='bar'>
+        <view class='box'>风向</view>
+        <view class='box'>风速</view>
+        <view class='box'>风力</view>
+      </view>
+      <view class='bar'>
+        <view class='box'>{{now.windDir}}</view>
+        <view class='box'>{{now.windSpeed}} km/h</view>
+        <view class='box'>{{now.windScale}} 级</view>
+      </view>
+    </view>
+  </view>
