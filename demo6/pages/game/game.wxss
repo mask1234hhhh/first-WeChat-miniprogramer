@@ -1,0 +1,32 @@
+/*游戏画布样式*/
+canvas{
+border:1rpx solid;
+width:320px;
+height:320px;
+}
+.scoreboard {
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  font-size: 32rpx;
+  color: orange;
+  text-align: center;
+}
+/*方向键按钮整体区域*/.btnBox{
+display: flex;
+flex-direction:column;
+align-items:center;}
+/*方向键按钮第二行*/.btnBox view{
+  display:flex;
+flex-direction:row;
+}
+/*所有方向键按钮*/
+.btnBox button{
+  width: 90rpx;
+height:90rpx;
+}
+
+/*所有按钮样式*/
+button{
+margin:10rpx;
+}

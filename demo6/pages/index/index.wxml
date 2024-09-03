@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="title">游戏选关</view>
+  <view class="levelBox">
+    <view class="box" wx:for='{{levels}}'wx:key='levels{{index}}'bindtap='chooseLevel' data-level='{{index}}'>
+      <image src='/images/{{item}}'></image>
+      <text>第{{index+1}}关</text>
+    </view>
+  </view>
+  
+</view>
